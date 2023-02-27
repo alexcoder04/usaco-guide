@@ -1,3 +1,5 @@
+// this is my original solution, written entirely by me
+
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -28,6 +30,13 @@ int main(){
         steps[i].push_back(line[0] - '0' - 1);
         steps[i].push_back(line[2] - '0' - 1);
         steps[i].push_back(line[4] - '0' - 1);
+    }
+
+    for (int i = 0; i < steps.size(); ++i) {
+        for (int j = 0; j < 3; ++j) {
+            cout << steps[i][j];
+        }
+        cout << endl;
     }
 
     infile.close();
